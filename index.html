@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venture Enterprise Car Rental</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-tertiary">
+
+    <!-- Navigation Menu -->
+    <nav class="fixed top-0 left-0 right-0 z-40 bg-primary bg-opacity-90 shadow-lg backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Company Logo/Name -->
+            <a href="#" class="text-2xl md:text-3xl font-bold text-tertiary">
+                Venture <span class="text-secondary">Enterprise</span>
+            </a>
+            <!-- Desktop Menu Items -->
+            <ul class="hidden md:flex items-center space-x-6">
+                <li><a href="#" class="text-lg font-semibold text-tertiary hover:text-secondary transition-colors duration-300">Home</a></li>
+                <li><a href="#about" class="text-lg font-semibold text-tertiary hover:text-secondary transition-colors duration-300">About Us</a></li>
+                <li><a href="#fleet" class="text-lg font-semibold text-tertiary hover:text-secondary transition-colors duration-300">Our Fleet</a></li>
+                <li><a href="#booking" class="text-lg font-semibold text-tertiary hover:text-secondary transition-colors duration-300">Book with Us</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-tertiary hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-secondary transition-colors duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="mobile-menu fixed top-0 right-0 h-full w-full bg-tertiary text-primary shadow-xl z-50 p-8 flex flex-col items-center justify-center">
+        <button id="close-mobile-menu" class="absolute top-4 right-4 text-primary p-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <ul class="space-y-8 text-center text-2xl font-semibold">
+            <li><a href="#" class="block text-white hover:text-secondary transition-colors duration-300">Home</a></li>
+            <li><a href="#about" class="block text-white hover:text-secondary transition-colors duration-300">About Us</a></li>
+            <li><a href="#fleet" class="block text-white hover:text-secondary transition-colors duration-300">Our Fleet</a></li>
+            <li><a href="#booking" class="block text-white hover:text-secondary transition-colors duration-300">Book with Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen bg-cover bg-center flex items-center justify-center p-4" style="background-image: url('https://placehold.co/1920x1080/47514e/de9b33?text=Venture+Enterprise');">
+        <div class="absolute inset-0 bg-tertiary opacity-75"></div>
+        <div class="relative text-center text-white p-6 md:p-12 bg-black bg-opacity-40 rounded-3xl shadow-2xl backdrop-blur-sm mx-4 mt-16 md:mt-0">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Venture Enterprise</h1>
+            <h2 class="text-2xl md:text-3xl font-light mb-6">Car Rental</h2>
+            <p class="text-md md:text-lg mb-8 max-w-2xl mx-auto">
+                Discover the freedom of the open road with our premium fleet. Reliable, affordable, and ready for your next adventure.
+            </p>
+            <a href="#booking" class="bg-secondary text-tertiary font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out hover:bg-opacity-80">
+                Book Your Ride Now
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 md:py-20">
+        
+        <!-- About Section -->
+        <section id="about" class="bg-primary rounded-3xl shadow-xl p-6 md:p-12 mb-12">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                    <h3 class="text-4xl font-semibold mb-4 text-tertiary">Our Mission</h3>
+                    <p class="mb-4 text-lg">
+                        At Venture Enterprise, we believe in providing more than just a car—we offer a seamless, hassle-free rental experience. Our commitment to quality and customer satisfaction is our top priority. We've partnered with Rentsyt to bring you an intuitive and efficient booking process, ensuring you're on the road in no time.
+                    </p>
+                    <p class="text-lg">
+                        Whether you're traveling for business or pleasure, our diverse fleet of vehicles is meticulously maintained to guarantee your safety and comfort.
+                    </p>
+                </div>
+                <div class="md:w-1/2 rounded-3xl overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/800x600/de9b33/47514e?text=About+Us" alt="A sleek car against a scenic backdrop." class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Fleet Section -->
+        <section id="fleet" class="mb-12">
+            <h3 class="text-4xl md:text-5xl font-semibold text-center mb-10 text-tertiary">Our Fleet</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Car Card 1 -->
+                <div class="bg-primary rounded-3xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/47514e/ffffff?text=Mini+Van" alt="Mini Van" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Mini Van</h4>
+                        <p class="text-lg mb-4">Spacious and comfortable. Perfect for family trips and group adventures.</p>
+                        <ul class="text-sm list-disc list-inside space-y-1 text-gray-600 mb-4">
+                            <li>Automatic Transmission</li>
+                            <li>GPS Navigation</li>
+                            <li>Ample Luggage Space</li>
+                        </ul>
+                        <div class="text-right">
+                            <span class="text-2xl font-bold text-secondary">$99</span>
+                            <span class="text-lg text-gray-500">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 2 -->
+                <div class="bg-primary rounded-3xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/de9b33/47514e?text=Family+SUV" alt="Family SUV" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Family SUV</h4>
+                        <p class="text-lg mb-4">Spacious and secure. Ideal for family vacations and group adventures.</p>
+                        <ul class="text-sm list-disc list-inside space-y-1 text-gray-600 mb-4">
+                            <li>7 Passenger Seating</li>
+                            <li>AWD Capability</li>
+                            <li>Child Safety Features</li>
+                        </ul>
+                        <div class="text-right">
+                            <span class="text-2xl font-bold text-secondary">$120</span>
+                            <span class="text-lg text-gray-500">/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 3 -->
+                <div class="bg-primary rounded-3xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/47514e/de9b33?text=Compact+SUV" alt="Compact SUV" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Compact SUV</h4>
+                        <p class="text-lg mb-4">Effortless city driving with the space and versatility of an SUV.</p>
+                        <ul class="text-sm list-disc list-inside space-y-1 text-gray-600 mb-4">
+                            <li>Automatic Transmission</li>
+                            <li>Excellent Fuel Economy</li>
+                            <li>Spacious Interior</li>
+                        </ul>
+                        <div class="text-right">
+                            <span class="text-2xl font-bold text-secondary">$65</span>
+                            <span class="text-lg text-gray-500">/day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section (Rentsyt Integration) -->
+        <section id="booking" class="bg-tertiary rounded-3xl shadow-xl p-6 md:p-12 text-white">
+            <h3 class="text-4xl md:text-5xl font-semibold text-center mb-6">Book Your Car with Rentsyt</h3>
+            <p class="text-center text-lg mb-8">
+                Our seamless booking process is powered by Rentsyt to provide you with the fastest and easiest way to reserve your vehicle.
+            </p>
+            <!-- This form is a placeholder for the Rentsyt rental software integration. -->
+            <!-- In a real-world scenario, you would embed or link to the actual software here. -->
+            <form class="space-y-6 max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="pickup-location" class="block text-sm font-medium mb-1">Pickup Location</label>
+                        <input type="text" id="pickup-location" class="w-full p-3 rounded-lg border-2 border-secondary focus:ring-secondary focus:ring-2 focus:outline-none text-tertiary" placeholder="City, Airport, Address" required>
+                    </div>
+                    <div>
+                        <label for="return-location" class="block text-sm font-medium mb-1">Return Location</label>
+                        <input type="text" id="return-location" class="w-full p-3 rounded-lg border-2 border-secondary focus:ring-secondary focus:ring-2 focus:outline-none text-tertiary" placeholder="City, Airport, Address" required>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="pickup-date" class="block text-sm font-medium mb-1">Pickup Date</label>
+                        <input type="date" id="pickup-date" class="w-full p-3 rounded-lg border-2 border-secondary focus:ring-secondary focus:ring-2 focus:outline-none text-tertiary" required>
+                    </div>
+                    <div>
+                        <label for="return-date" class="block text-sm font-medium mb-1">Return Date</label>
+                        <input type="date" id="return-date" class="w-full p-3 rounded-lg border-2 border-secondary focus:ring-secondary focus:ring-2 focus:outline-none text-tertiary" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="car-type" class="block text-sm font-medium mb-1">Car Type</label>
+                    <select id="car-type" class="w-full p-3 rounded-lg border-2 border-secondary focus:ring-secondary focus:ring-2 focus:outline-none text-tertiary" required>
+                        <option value="">Select a Car Type</option>
+                        <option value="minivan">Mini Van</option>
+                        <option value="suv">Family SUV</option>
+                        <option value="compact-suv">Compact SUV</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-secondary text-tertiary font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out hover:bg-opacity-80">
+                    Search Availability
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-tertiary text-white py-10 md:py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h4 class="text-3xl font-bold mb-4">Venture Enterprise</h4>
+            <div class="text-sm space-y-2 mb-6">
+                <p>123 Car Rental Blvd, Cityville, 12345</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@ventureenterprise.com</p>
+            </div>
+            <div class="flex justify-center space-x-4 mb-6">
+                <!-- Social media icons would go here -->
+            </div>
+            <p class="text-xs text-gray-400">© 2023 Venture Enterprise Car Rental. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

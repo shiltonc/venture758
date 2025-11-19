@@ -1,0 +1,49 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Custom colors for Tailwind */
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #de9b33;
+    --color-tertiary: #47514e;
+}
+
+.bg-primary { 
+    background-color: var(--color-primary); 
+}
+
+.bg-secondary { 
+    background-color: var(--color-secondary); 
+}
+
+.bg-tertiary { 
+    background-color: var(--color-tertiary); 
+}
+
+.text-secondary { 
+    color: var(--color-secondary); 
+}
+
+.text-tertiary { 
+    color: var(--color-tertiary); 
+}
+
+.border-secondary { 
+    border-color: var(--color-secondary); 
+}
+
+.ring-secondary:focus {
+    --tw-ring-color: var(--color-secondary);
+}
+
+/* Custom styles for mobile menu */
+.mobile-menu {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+.mobile-menu.is-active {
+    transform: translateX(0);
+}
